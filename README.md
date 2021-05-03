@@ -1,6 +1,7 @@
 # front-end-test-course
 
 写给前端的测试课
+
 ## why
 
 最近在看郑大的《程序员的测试课》，里面都是用 java 来实现的。
@@ -10,11 +11,7 @@
 ## 目录
 
 - 前端测试的类型
-  - e2e 测试
-    - cypress
-  - 组件测试
-    - cypress component
-    - @testing-library/vue
   - 单元测试
-    - jest
+  - 组件测试
+  - e2e 测试
 - 实现一个 ToDo 的应用
