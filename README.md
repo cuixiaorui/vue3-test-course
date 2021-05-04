@@ -10,8 +10,8 @@
 
 ## 目录
 
-- 前端测试的类型
-  - 单元测试
-  - 组件测试
-  - e2e 测试
+- [前端测试的类型](https://github.com/cuixiaorui/front-end-test-course/blob/main/book/1-%E5%89%8D%E7%AB%AF%E6%B5%8B%E8%AF%95%E7%9A%84%E7%B1%BB%E5%9E%8B.md)
+  - [单元测试](https://github.com/cuixiaorui/front-end-test-course/blob/main/book/1.1-%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95.md)
+  - [组件测试](https://github.com/cuixiaorui/front-end-test-course/blob/main/book/1.2-%E7%BB%84%E4%BB%B6%E6%B5%8B%E8%AF%95.md)
+  - [e2e 测试](https://github.com/cuixiaorui/front-end-test-course/blob/main/book/1.3-e2e%E6%B5%8B%E8%AF%95.md)
 - 实现一个 ToDo 的应用
