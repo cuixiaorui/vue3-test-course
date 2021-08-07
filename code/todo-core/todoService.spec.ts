@@ -1,9 +1,7 @@
-import { list } from "./todoService";
-describe("test jest init", () => {
-  it("init", () => {
-    expect(true).toBe(true);
-  });
-  it("list", () => {
-    expect(list()).toEqual([]);
+import TodoParameter, { addTodoItem } from "./todoService";
+describe("todoService", () => {
+  it("should add todo item", () => {
+    const item = addTodoItem(new TodoParameter("吃饭"));
+    expect(item.getContent()).toBe("吃饭");
   });
 });
