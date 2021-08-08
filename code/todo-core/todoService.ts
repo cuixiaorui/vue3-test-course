@@ -2,7 +2,7 @@
 
 import TodoItem from "./TodoItem";
 
-export default class TodoParameter {
+export class TodoParameter {
   private content: string;
   constructor(content) {
     this.content = content;
@@ -12,11 +12,31 @@ export default class TodoParameter {
   }
 }
 
-export function addTodoItem(todoParameter: TodoParameter): TodoItem {
-  return new TodoItem(todoParameter.getContent());
+export class TodoIndexParameter {
+  private _index: string;
+  constructor(index) {
+    this._index = index;
+  }
+  getIndex() {
+    return this._index;
+  }
 }
 
-export function markTodoItemDone() {}
+let items: Array<TodoItem> = [];
+export function addTodoItem(todoParameter: TodoParameter): TodoItem {
+  const todoItem = new TodoItem(todoParameter.getContent());
+  items.push(todoItem);
+  return todoItem;
+}
+
+export function markTodoItemDone(todoIndex: TodoIndexParameter): TodoItem {
+  // TODO 没有处理 index 没有的情况
+  const todoItem = items[todoIndex.getIndex()] as TodoItem;
+  todoItem.markDone();
+  console.log(todoItem);
+  console.log(items.length);
+  return todoItem;
+}
 export function list() {
-  return [];
+  return items;
 }
