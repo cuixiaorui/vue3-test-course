@@ -1,5 +1,4 @@
 // 值类型
-
 import TodoItem from "./TodoItem";
 
 export class TodoParameter {
@@ -22,21 +21,22 @@ export class TodoIndexParameter {
   }
 }
 
-let items: Array<TodoItem> = [];
-export function addTodoItem(todoParameter: TodoParameter): TodoItem {
-  const todoItem = new TodoItem(todoParameter.getContent());
-  items.push(todoItem);
-  return todoItem;
-}
+export class TodoService {
+  private _todos: Array<TodoItem>;
+  constructor(todos?: Array<TodoItem>) {
+    this._todos = todos || [];
+  }
 
-export function markTodoItemDone(todoIndex: TodoIndexParameter): TodoItem {
-  // TODO 没有处理 index 没有的情况
-  const todoItem = items[todoIndex.getIndex()] as TodoItem;
-  todoItem.markDone();
-  console.log(todoItem);
-  console.log(items.length);
-  return todoItem;
-}
-export function list() {
-  return items;
+  addTodoItem(todoParameter: TodoParameter): TodoItem {
+    const todoItem = new TodoItem(todoParameter.getContent());
+    this._todos.push(todoItem);
+    return todoItem;
+  }
+
+  markTodoItemDone(todoIndex: TodoIndexParameter): TodoItem {
+    // TODO 没有处理 index 没有的情况
+    const todoItem = this._todos[todoIndex.getIndex()] as TodoItem;
+    todoItem.markDone();
+    return todoItem;
+  }
 }
