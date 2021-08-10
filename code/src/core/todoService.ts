@@ -1,5 +1,8 @@
 // 值类型
+
 import TodoItem from "./TodoItem";
+
+export type Todos = Array<TodoItem>;
 
 export class TodoParameter {
   private content: string;
@@ -23,7 +26,7 @@ export class TodoIndexParameter {
 
 export class TodoService {
   private _todos: Array<TodoItem>;
-  constructor(todos?: Array<TodoItem>) {
+  constructor(todos?: Todos) {
     this._todos = todos || [];
   }
 
