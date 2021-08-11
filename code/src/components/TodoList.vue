@@ -1,6 +1,6 @@
 <template>
   <div>
-    <input type="text" v-model="newTodo" />
+    <input type="text" v-model="newTodo" data-test="todoText" />
     <button @click="addTodo">add</button>
     <div>
       <ul>
@@ -24,6 +24,7 @@ const todoService = new TodoService(todos as Todos);
 
 function addTodo() {
   todoService.addTodoItem(new TodoParameter(newTodo.value));
+  newTodo.value = ""
 }
 </script>
 
