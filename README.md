@@ -15,10 +15,18 @@
   - [组件测试](https://github.com/cuixiaorui/front-end-test-course/issues/2)
   - [e2e 测试](https://github.com/cuixiaorui/front-end-test-course/issues/3)
 - 实现一个 ToDo 的应用
-  
 
 ## 如何参与
+
 可以在 issues 区提出你对于前端测试的问题
 
 每一个小节一开始的时候都会在 issues 内编写，可以在 issue 里面充分的讨论
 定稿后将会把内容整理到 .md 中
+
+## 版权许可
+
+本书采用“保持署名—非商用”创意共享 4.0 许可证。
+
+只要保持原作者署名和非商用，您可以自由地阅读、分享、修改本书。
+
+详细的法律条文请参见[创意共享](http://creativecommons.org/licenses/by-nc/4.0/)网站
