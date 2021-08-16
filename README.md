@@ -27,6 +27,8 @@
   - [组件测试](https://github.com/cuixiaorui/front-end-test-course/issues/2)
   - [e2e 测试](https://github.com/cuixiaorui/front-end-test-course/issues/3)
 - 实现一个 ToDo 的应用
+- Functional Core, Imperative Shell 模式在前端的应用
+- 在前端实践后端的分层概念
 
 ## 如何参与
 
