@@ -1,20 +1,13 @@
 <template>
   <div>
-    <TodoList></TodoList>
+    <Todo></Todo>
   </div>
 </template>
 
-<script lang="ts" setup>
-import TodoList from "./components/TodoList.vue";
+<script setup lang="ts">
+import Todo from "./pages/Todo.vue";
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style scoped>
+
 </style>
